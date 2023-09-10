@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Todo List</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container">
+			<h1 class="header__title">Список дел</h1>
+			<div id="flex-container">
+				<div id="mainCard">
+					<div class="card ">
+						<div class="card-header">Добавить новую задачу</div>
+						<div class="card-body">
+							<form id="form">
+								<div class="form-group">
+									<input type="text" class="form-control" id="taskInput" placeholder="Текст задачи" required="" control-id="ControlID-1">
+								</div>
+								<button type="submit" class="btn btn-primary  btn-lg active" control-id="ControlID-2">Добавить</button>
+							</form>
+						</div>
+					</div>
+					<div class="card ">
+						<div class="card-header">Cписок задач на сегодня</div>
+						<div class="card-body">
+							<ul id="tasksList" class="list-group">						
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="card ">
+					<div data-spoller class="card-header card-header_add">Дополнительный функционал
+						<img class="arrow-img" src="img/arrow-bottom.svg" alt="">
+					</div>
+					<div class="card-body card-body_add">
+						<ul class="card-body__buttons">
+							<li class="card-body__button">
+								<button type="button" id="odd" class="btn btn_add">Выделить четные</button>
+							</li>
+							<li class="card-body__button">
+								<button type="button" id="notOdd" class="btn btn_add">Выделить нечетные</button>
+							</li>
+							<li class="card-body__button">
+								<button type="button" id="firstEl" class="btn btn_add">Удалить первый элемент</button>
+							</li>
+							<li class="card-body__button">
+								<button type="button" id="lastEl" class="btn btn_add">Удалить последний элемент</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<script src="./js/app.min.js"></script>
+</body>
+
+</html>
